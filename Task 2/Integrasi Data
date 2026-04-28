@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Asumsi tabel sudah dalam bentuk DataFrame
+df_user = pd.read_csv('users.csv')
+df_product = pd.read_csv('products.csv')
+df_order = pd.read_csv('orders.csv')
+
+# Merge Data
+# Gabung Order dengan User
+data = pd.merge(df_order, df_user, on='user_id')
+# Gabung dengan Product (asumsi ada tabel perantara/detail order)
+# ... lakukan merge lanjutan sesuai struktur database kamu
