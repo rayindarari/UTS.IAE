@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.hist(df_clean['total_amount'], bins=30, color='skyblue', edgecolor='black')
+plt.title('Distribusi Total Transaksi Pelanggan')
+plt.xlabel('Total Amount')
+plt.ylabel('Frekuensi')
+plt.grid(axis='y', alpha=0.5)
+plt.show()
